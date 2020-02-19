@@ -11,11 +11,11 @@ name: Build OpenWrt
 on:
   release:
     types: [published]
-  push:
-    branches:
-      - master
-    paths:
-      - '.config'
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -64,11 +64,27 @@ jobs:
     - name: Clone source code
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+    - name: Update & Install feeds
+      working-directory: ./openwrt
+      run: |
+        sed -i '$a\src-git lienol https:\/\/github.com\/Lienol\/openwrt-package' feeds.conf.default
+        ./scripts/feeds update -a
+        rm -rf feeds/lienol/lienol/v2ray
+        rm -rf feeds/lienol/lienol/openssl1.1
+        rm -rf feeds/lienol/lienol/trojan
+        rm -rf feeds/lienol/lienol/ipt2socks
+        rm -rf feeds/lienol/lienol/shadowsocks-libev-new
+        rm -rf feeds/lienol/lienol/shadowsocksr-libev
+        rm -rf feeds/lienol/lienol/pdnsd-alt
+        rm -rf feeds/lienol/package/verysync
+        rm -rf feeds/lienol/lienol/luci-app-verysync
+        rm -rf package/lean/kcptun
+        rm -rf package/lean/luci-app-kodexplorer
+        rm -rf package/lean/luci-app-pppoe-relay
+        rm -rf package/lean/luci-app-pptp-server
+        rm -rf package/lean/luci-app-v2ray-server
+        ./scripts/feeds install -a
+        ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
