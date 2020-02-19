@@ -27,6 +27,7 @@ sed -i '$a\net.bridge.bridge-nf-call-arptables = 1' package/base-files/files/etc
 rm -rf package/network/config/firewall/files/firewall.config
 cp -f ../firewall.config package/network/config/firewall/files/
 
+#添加wifi
 mkdir -p files/etc/config
 cp -f ../wireless files/etc/config/
 
