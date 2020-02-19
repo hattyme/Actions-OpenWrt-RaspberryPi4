@@ -25,15 +25,15 @@ sed -i '$a\net.bridge.bridge-nf-call-ip6tables = 1' package/base-files/files/etc
 sed -i '$a\net.bridge.bridge-nf-call-iptables = 1' package/base-files/files/etc/sysctl.conf
 sed -i '$a\net.bridge.bridge-nf-call-arptables = 1' package/base-files/files/etc/sysctl.conf
 rm -rf package/network/config/firewall/files/firewall.config
-cp -f firewall.config package/network/config/firewall/files/firewall.config
+cp -f ../firewall.config package/network/config/firewall/files/
 
 默认开启wifi并配置网口
 mkdir -p files/etc/config
-cp -f wireless files/etc/config/wireless
+cp -f ../wireless files/etc/config/
 
 #修改机器名称
 sed -i 's/OpenWrt/RaspberryPi4/g' package/base-files/files/bin/config_generate
 
 #替换banner
 rm -rf package/base-files/files/etc/banner
-cp -f banner package/base-files/files/etc/
+cp -f ../banner package/base-files/files/etc/
