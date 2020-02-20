@@ -6,8 +6,8 @@
 
 1.点击fork将项目fork到自己的仓库。  
 2.fork完成后进行一次新的编译：
-> 点击star  
-> 更新.config  
+- 点击star  
+- 更新.config  
 
 ## License
 
