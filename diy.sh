@@ -37,3 +37,6 @@ sed -i 's/OpenWrt/RaspberryPi4/g' package/base-files/files/bin/config_generate
 #替换banner
 rm -rf package/base-files/files/etc/banner
 cp -f ../banner package/base-files/files/etc/
+
+#添加nfs
+ln -s ../luci-theme-argon package/lean/
