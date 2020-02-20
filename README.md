@@ -11,7 +11,7 @@
 1.点击fork将项目fork到自己的仓库  
 2.fork完成后
 > 点击star  
-更新.config  
+  更新.config  
 都会进行一次新的编译
 
 ## Acknowledgments
