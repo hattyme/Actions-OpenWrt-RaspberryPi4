@@ -1,30 +1,13 @@
 # 树莓派4-openwrt
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)](https://github.com/P3TERX/Actions-OpenWrt/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)](https://github.com/P3TERX/Actions-OpenWrt/fork)
+使用Github Action编译树莓派4的Openwrt，感谢P3TERX的[Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)项目
 
-使用Github Action编译树莓派4的Openwrt
-
-## Usage
+## 使用方法
 
 1.点击fork将项目fork到自己的仓库。  
 2.fork完成后进行一次新的编译：
 > 点击star  
 > 更新.config  
-
-## Acknowledgments
-
-- [Microsoft](https://www.microsoft.com)
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub](https://github.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cisco](https://www.cisco.com/)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
 
 ## License
 
