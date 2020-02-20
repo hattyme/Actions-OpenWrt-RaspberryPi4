@@ -4,16 +4,14 @@
 [![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)](https://github.com/P3TERX/Actions-OpenWrt/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)](https://github.com/P3TERX/Actions-OpenWrt/fork)
 
-使用github action编译树莓派4 openwrt
+使用Github Action编译树莓派4的Openwrt
 
 ## Usage
 
-1.点击fork将项目fork到自己的仓库  
-2.fork完成后
+1.点击fork将项目fork到自己的仓库。  
+2.fork完成后进行一次新的编译：
 > 点击star  
 > 更新.config  
-
-都会进行一次新的编译
 
 ## Acknowledgments
 
