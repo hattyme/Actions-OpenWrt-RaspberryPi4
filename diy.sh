@@ -39,4 +39,4 @@ rm -rf package/base-files/files/etc/banner
 cp -f ../banner package/base-files/files/etc/
 
 #添加nfs
-ln -s ../luci-theme-argon package/
+ln -s ../luci-app-nfs package/
